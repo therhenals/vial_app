@@ -20,7 +20,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Inventario Vial',
       theme: ThemeStyles.dark(),
-      home: const TabsScreen(),
+      initialRoute: 'tabs',
+      routes: {
+        'tabs': (_) => const TabsScreen(),
+      },
     );
   }
 }
