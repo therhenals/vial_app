@@ -28,10 +28,14 @@ class ThemeStyles {
       scaffoldBackgroundColor: backgroundDark,
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(100),
+          ),
           side: const BorderSide(
             width: 2,
             color: primaryColorDark,
           ),
+          padding: const EdgeInsets.all(10),
         ),
       ),
       bottomSheetTheme: const BottomSheetThemeData(
